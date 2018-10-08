@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
+    "cypress": "^3.1.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "17.0.0",
     "eslint-config-airbnb-base": "13.0.0",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "start:production": "yarn build && hs build",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "yarn cypress:assignment",
+    "cypress:open": "cypress open",
+    "cypress:assignment": "cypress run --spec './cypress/integration/navigation.js,./cypress/integration/form.login.js'",
     "eject": "react-scripts eject",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --fix 'src/**/*.js'"
