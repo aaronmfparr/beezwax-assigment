@@ -1,0 +1,20 @@
+.Login pre {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px dotted black;
+}
+
+.Login-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Login-form input {
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+.Login-form button {
+  padding: .5rem;
+}
